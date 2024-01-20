@@ -17,16 +17,16 @@ fn main() -> ExitCode {
     };
 
     let mut values = vec![];
-    let mut cont = Default::default();
+    let mut contnent = Default::default();
     match File::open(f) {
-        Ok(mut f) => match f.read_to_string(&mut cont){
+        Ok(mut f) => match f.read_to_string(&mut contnent){
             Ok(_) => (),
             Err(e) => {eprintln!("error reading file: {e}"); return 1.into();}
         }
         Err(e) => {eprintln!("error reading file: {e}"); return 1.into();}
     };
 
-    for (i, line) in cont.lines().enumerate() {
+    for (i, line) in contnent.lines().enumerate() {
         let line = line.trim();
         if line.len() == 0 {continue}
         let (x, y) = line.split_at(match line.find(","){
@@ -54,8 +54,9 @@ fn main() -> ExitCode {
             coeffs.push(v.y / product)
         } else {coeffs.push(0.);}
     }
-    print!("f(x) = ");
+    println!("f(x) = ");
 
+    // print parenthesis around pylynomials if roots are factored out
     let mut paren = false;
     for v in &values {
         if v.y == 0. {
