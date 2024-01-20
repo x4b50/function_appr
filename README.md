@@ -47,3 +47,7 @@ Having calculated the coefficients we can sum up all of the polynomials, giving 
 ```math
 W(x) = W(x_1) + W(x_2) + ... + W(x_n)
 ```
+
+## TODO
+- [ ] add constant substitution ($\pi$, $e$, etc.)
+- [ ] add function evaluation (sin, etc.)
