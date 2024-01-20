@@ -51,4 +51,4 @@ W(x) = W(x_1) + W(x_2) + ... + W(x_n)
 ## TODO
 - [ ] add constant substitution ($\pi$, $e$, etc.)
 - [ ] add function evaluation (sin, etc.)
-- [ ] add square roots (might be only for $\sqrt{2}, \sqrt{3}, \sqrt{5}$)
+- [ ] add square roots (might be only for 2, 3 and 5)
