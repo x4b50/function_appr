@@ -1,5 +1,5 @@
 # Function approximator
-This program creates a polynomial function that passes through points specified in a file.
+This program creates a polynomial function that passes through all the points specified in a file. It is also recommended to use graphical calculators, like desmos, to check the accuracy, especially with low data density.
 
 For example the file bellow gives the following output:
 ```
@@ -10,7 +10,8 @@ For example the file bellow gives the following output:
 ```
 ```shell
 $ cargo run input.txt
-f(x) = x( 0.5(x-2)(x-3) -2(x-1)(x-3) + 1.5(x-1)(x-2))
+f(x) =
+x( 0.5(x-2)(x-3) -2(x-1)(x-3) + 1.5(x-1)(x-2))
 ```
 
 ## How it works
